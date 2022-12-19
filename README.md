@@ -14,5 +14,5 @@ you will make use of Python to explore data related to bike share systems for th
 - washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+udacity introduction to Version Control
 
