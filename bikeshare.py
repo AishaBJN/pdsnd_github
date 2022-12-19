@@ -161,9 +161,10 @@ def user_stats(df,city):
     # TO DO: Display earliest, most recent, and most common year of birth
     if city != 'washington':
         earliest_y = df['Birth Year'].min()
+        recent_m = df['month'].max()
         recent_y = df['Birth Year'].max()
         common_y = df['Birth Year'].mode()[0]
-        print(' Earliest birth is {} and Most recent birth is {} and most common year of birth {} '.format(earliest_y , recent_y , common_y))
+        print(' Earliest year of birth is {} and Most recent year of birth is {} and most common year of birth {} and Most recent month of birth is {} '.format(earliest_y , recent_y , common_y, recent_m )) 
         
     else:
         print(" Gender Types: No data available for this month. ")
@@ -177,6 +178,7 @@ def user_stats(df,city):
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+    print(" Nice Work ")
 
 
 def main():
